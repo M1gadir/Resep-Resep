@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mhj-Vm-dib">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Food Recipe-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Resep_Resep" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8077ef870cefc45b87b906a493a41193--padang-rumah.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cty-EP-IbK">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="ZzU-YH-VH0"/>
+                                    <constraint firstAttribute="height" constant="603" id="gla-gS-UzM"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iB-xt-XuB">
+                                <rect key="frame" x="24" y="617" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Exit">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="close:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ObL-45-1ge"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kW3-aw-Q1i">
+                                <rect key="frame" x="134" y="225" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Soto Lamongan">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="UOl-xn-gwr" kind="show" id="EXy-pG-7m0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ToP-1p-UG4">
+                                <rect key="frame" x="153" y="519" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Pecel Lele">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="XCV-VM-9Vz" kind="show" id="nbT-n3-YLs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuA-to-1HX">
+                                <rect key="frame" x="160" y="413" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Iga Sapi">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Dqs-Ac-mfa" kind="show" id="wo4-ir-TkE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tio-FY-CZ3">
+                                <rect key="frame" x="170" y="617" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="More">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tim-eb-i61" kind="show" id="qCc-pT-m91"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtH-32-vfJ">
+                                <rect key="frame" x="315" y="318" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Bakso">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GVj-CA-3Wu" kind="show" id="aUf-4U-pL8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCU-7L-gnh">
+                                <rect key="frame" x="157" y="319" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Sop Sapi">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LwX-rX-VKw" kind="show" id="Po6-rq-Bnw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Exb-i7-2NY">
+                                <rect key="frame" x="12" y="319" width="54" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Batagor">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="1B0-8e-usN" kind="show" id="sOG-qV-ZV9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resep Resep Makanan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdH-5f-Uvs">
+                                <rect key="frame" x="103" y="122" width="169" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cty-EP-IbK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AV4-ft-lS3"/>
+                            <constraint firstItem="cty-EP-IbK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OI5-nD-hUb"/>
+                            <constraint firstItem="cty-EP-IbK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="a24-fH-4Yk"/>
+                            <constraint firstItem="cty-EP-IbK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ffe-Pj-PHb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Food Recipe" id="GN2-eJ-cSu">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="x0E-wq-MMu"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="89.505247376311857"/>
+        </scene>
+        <!--Webkit View Controller-->
+        <scene sceneID="P4E-bI-ZkF">
+            <objects>
+                <viewController id="tim-eb-i61" customClass="webkitViewController" customModule="Resep_Resep" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yfr-Rd-NU4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zvo-Bn-EZZ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zvo-Bn-EZZ" firstAttribute="leading" secondItem="bjh-dV-Boa" secondAttribute="leading" id="0nW-2L-mdH"/>
+                            <constraint firstItem="bjh-dV-Boa" firstAttribute="trailing" secondItem="Zvo-Bn-EZZ" secondAttribute="trailing" id="0p0-BG-iyV"/>
+                            <constraint firstItem="bjh-dV-Boa" firstAttribute="bottom" secondItem="Zvo-Bn-EZZ" secondAttribute="bottom" id="cA7-2e-5ie"/>
+                            <constraint firstItem="Zvo-Bn-EZZ" firstAttribute="top" secondItem="bjh-dV-Boa" secondAttribute="top" id="cpX-DF-t45"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bjh-dV-Boa"/>
+                    </view>
+                    <connections>
+                        <outlet property="cook" destination="Zvo-Bn-EZZ" id="Ebi-wB-6vh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="05D-hE-MZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="780"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rYW-Qd-zoy">
+            <objects>
+                <navigationController id="Mhj-Vm-dib" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Sh6-yt-jjf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uet-nX-Gqd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UNG-6c-UNL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-706" y="90"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SxN-MH-Quj">
+            <objects>
+                <viewController id="1B0-8e-usN" customClass="ViewController" customModule="Resep_Resep" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aot-sM-xRy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="batag.png" translatesAutoresizingMaskIntoConstraints="NO" id="zk0-Qd-MOg">
+                                <rect key="frame" x="0.0" y="64" width="375" height="199"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="199" id="Pdy-EN-4k2"/>
+                                    <constraint firstAttribute="width" constant="375" id="wy1-ar-EMY"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nsF-3k-yPP">
+                                <rect key="frame" x="0.0" y="271" width="375" height="396"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">BataGor  1. BAHAN 
+* 500 gr ikan tenggiri kualitas bagus 
+* 10 siung bawang putih, goreng lalu haluskan 
+* 1 sdt garam 
+* Sdt kaldu bubuk sapi 
+* 1 sdt penyedap (sy pake kaldu jamur) 
+* 1 sdm muncung gula pasir 
+* 1 sdm kecap ikan 
+* 1 sdm kecap asin 
+* 6 batang daun bawang, iris halus 
+* 200 gr tepung tapioka kualitas bagus 
+* 2 btr telur 
+* 150 ml air es 
+* Kulit pangsit goreng 
+* Tahu putih asin 
+2. LANGKAH
+
+* Campur ikan dengan semua bumbu, aduk hingga rata. Tambahkan air sedikit sedikit aduk hingga licin. Tambahkan telur satu persatu, aduk hingga tercampur rata
+* Tambahkan tepung tapioka,, aduk seperlunya hanya sampai tercampur saja, jangan diuleni jangan diaduk sampe licin.
+
+* Cetak dalam kulit pangsit atau tahu
+
+* Goreng dengan minyak panas dan banyak, api sedang</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nsF-3k-yPP" firstAttribute="leading" secondItem="2Wk-Fd-W6o" secondAttribute="leading" id="29K-8q-h4j"/>
+                            <constraint firstItem="zk0-Qd-MOg" firstAttribute="top" secondItem="2Wk-Fd-W6o" secondAttribute="top" id="4t2-56-KEG"/>
+                            <constraint firstItem="zk0-Qd-MOg" firstAttribute="trailing" secondItem="2Wk-Fd-W6o" secondAttribute="trailing" id="5ej-dh-KbZ"/>
+                            <constraint firstItem="nsF-3k-yPP" firstAttribute="top" secondItem="zk0-Qd-MOg" secondAttribute="bottom" constant="8" id="6Q0-0r-z59"/>
+                            <constraint firstItem="nsF-3k-yPP" firstAttribute="trailing" secondItem="2Wk-Fd-W6o" secondAttribute="trailing" id="Geg-jT-pLA"/>
+                            <constraint firstItem="nsF-3k-yPP" firstAttribute="bottom" secondItem="2Wk-Fd-W6o" secondAttribute="bottom" id="Vh6-4p-Hwj"/>
+                            <constraint firstItem="zk0-Qd-MOg" firstAttribute="trailing" secondItem="2Wk-Fd-W6o" secondAttribute="trailing" id="YNp-Hb-E0o"/>
+                            <constraint firstItem="zk0-Qd-MOg" firstAttribute="top" secondItem="2Wk-Fd-W6o" secondAttribute="top" id="hcv-4o-qyq"/>
+                            <constraint firstItem="zk0-Qd-MOg" firstAttribute="leading" secondItem="2Wk-Fd-W6o" secondAttribute="leading" id="jpN-Ag-g5d"/>
+                            <constraint firstItem="zk0-Qd-MOg" firstAttribute="leading" secondItem="2Wk-Fd-W6o" secondAttribute="leading" id="lRj-D3-IHy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Wk-Fd-W6o"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gGN-3a-AQv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zF3-ca-5EX" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-706.39999999999998" y="-626.53673163418296"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wEa-rD-OUT">
+            <objects>
+                <viewController id="UOl-xn-gwr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qY5-l8-MY3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumb_2869_recipe_detail.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="qSe-64-2w9">
+                                <rect key="frame" x="0.0" y="64" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="ZhA-YH-mqj"/>
+                                    <constraint firstAttribute="height" constant="200" id="bAm-cc-x0W"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rh6-qd-lxh">
+                                <rect key="frame" x="0.0" y="272" width="375" height="395"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Soto Lamongan  1. Bahan utama : 
+* 1/2 kg Ayam rebus lalu tiriskan 
+* Soun rebus sebentar lalu tiriskan 
+* Kol/touge, seledri / daun bawang di iris halus 
+* Telor 1/4 rebus sampai matang, bawang goreng buat taburan 
+* Bahan halus: 
+* 6 siung Bawang merah 
+* 4 siung Bawang putih 
+* 3 buah Kemiri 
+* 1 ruas Kunyit 
+* Bumbu kuah: 
+* 2 buah cengkeh 
+* 3 lembar daun jeruk purut 
+* Secukupnya kaldu bubuk 
+* 2 buah kaldu kotak 
+* Garam 
+* 1 ruas kayu manis 
+* 1 sdt Jinten bubuk 
+* 1 sdt lada 
+* 1 sdt ketumbar 
+* 1 ruas jahe di geprek lalu diiris kecil 
+* 1 ruas laos di geprek lalu diiris tipis 
+* 1 buah lengkuas 
+* 1/4 pala
+* 
+*  1. Bahan koya : 
+* 5 kerupuk udang 
+* 4 siung bawang putih iris tipis lalu goreng 
+* Garam 
+* Bahan sambal : 
+* 10 buah Cabe rawit merah 
+* 2 siung bawang merah 
+* 2 siung bawang putih 
+2. Langkah	
+* Goreng ayam sampai matang lalu potong suwir 
+* Tumis bumbu halus sampai harum dengan api sedang 
+* Masukan air 1 liter + air sisa rebusan ayam 2 gelas kuah
+
+* Biarkan sampai mendidih 
+* Matikan api setelah kuah mendidih, koreksi rasa, kalau kurang asin tambah garam 
+* Cara membuat koya: tumbuk kerupuk, Bawang merah, Bawang putih goreng garam sampai halus 
+* Cara membuat sambal: ulek cabe rawit, bawang dan garam lalu sajikan 
+* Cara menyajikan: masukan irisan kol/ touge, seledri/ daun bawang, masukan soun, koya, masukan ayam suwir dan telur, tuangkan kuah panas terakhir bawang goreng      
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rh6-qd-lxh" firstAttribute="top" secondItem="qSe-64-2w9" secondAttribute="bottom" constant="8" id="7jN-O3-rgm"/>
+                            <constraint firstItem="rh6-qd-lxh" firstAttribute="bottom" secondItem="qav-FY-6L1" secondAttribute="bottom" id="D4s-NP-OpR"/>
+                            <constraint firstItem="rh6-qd-lxh" firstAttribute="trailing" secondItem="qav-FY-6L1" secondAttribute="trailing" id="a0d-0x-rAV"/>
+                            <constraint firstItem="qSe-64-2w9" firstAttribute="leading" secondItem="qav-FY-6L1" secondAttribute="leading" id="oav-7u-32b"/>
+                            <constraint firstItem="qSe-64-2w9" firstAttribute="top" secondItem="qav-FY-6L1" secondAttribute="top" id="sfF-Q7-zhP"/>
+                            <constraint firstItem="rh6-qd-lxh" firstAttribute="leading" secondItem="qav-FY-6L1" secondAttribute="leading" id="uoh-KJ-jHg"/>
+                            <constraint firstItem="qSe-64-2w9" firstAttribute="trailing" secondItem="qav-FY-6L1" secondAttribute="trailing" id="xEE-Y1-71f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qav-FY-6L1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="82Y-lx-pCI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="-625.63718140929541"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Be6-0e-QF5">
+            <objects>
+                <viewController id="Dqs-Ac-mfa" customClass="ViewController" customModule="Resep_Resep" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wab-2q-Tu6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iga sapi.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="E5M-H8-Qrz">
+                                <rect key="frame" x="0.0" y="64" width="375" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="X72-gA-Pf0"/>
+                                    <constraint firstAttribute="width" constant="375" id="sRl-cF-Hct"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vFy-VE-tZd">
+                                <rect key="frame" x="0.0" y="302" width="375" height="365"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Sop Iga  1. Bahan-Bahan : 
+* 1 kg iga sapi 
+* 2 buah kentang, potong² 
+* 2 buah wortel, potong² 
+* 1 buah tomat, potong² 
+* sesuai selera Daun bawang, iris² 
+* 1 batang kayu manis (utuh) 
+* 4 butir kapulaga (utuh) 
+* 3 buah pekak atau bunga lawang 
+* 3 buah cengkeh 
+* secukupnya Lada bubuk 
+* secukupnya Garam, gula pasir 
+* secukupnya Air 
+2. Bumbu Halus : 
+* 10 butir bawang merah 
+* 4 butir bawang putih 
+* 1/2 biji pala 
+3. Langkah Langkah : 
+* Rebus iga sampe air mendidih,,buang airnya. sisihkan 
+* Lalu rebus lg (sy pake panci presto) sampe daging empuk. kemudian masukkan kapulaga, cengkeh,kayu manis, pekak 
+* Tumis bumbu yg sudah dihaluskan lalu masukkan kedalam rebusan iga. Masukkan sayuran, beri garam,lada bubuk, gula pasir secukupnya. Koreksi rasa 
+* Masak sampe sayuran empuk dan matang. Sajikan😉
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="E5M-H8-Qrz" firstAttribute="leading" secondItem="Eqq-AU-boD" secondAttribute="leading" id="FlK-2o-zxR"/>
+                            <constraint firstItem="vFy-VE-tZd" firstAttribute="bottom" secondItem="Eqq-AU-boD" secondAttribute="bottom" id="K2u-4f-hmd"/>
+                            <constraint firstItem="E5M-H8-Qrz" firstAttribute="trailing" secondItem="Eqq-AU-boD" secondAttribute="trailing" id="LTW-b5-cWt"/>
+                            <constraint firstItem="vFy-VE-tZd" firstAttribute="leading" secondItem="Eqq-AU-boD" secondAttribute="leading" id="cZs-kD-QQP"/>
+                            <constraint firstItem="vFy-VE-tZd" firstAttribute="top" secondItem="E5M-H8-Qrz" secondAttribute="bottom" constant="8" id="fPK-GY-7zd"/>
+                            <constraint firstItem="vFy-VE-tZd" firstAttribute="trailing" secondItem="Eqq-AU-boD" secondAttribute="trailing" id="x8v-HV-YmA"/>
+                            <constraint firstItem="E5M-H8-Qrz" firstAttribute="top" secondItem="Eqq-AU-boD" secondAttribute="top" id="zwF-uK-BrT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Eqq-AU-boD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ilH-ny-FcT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ATQ-I4-xTW" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1378.4000000000001" y="778.56071964017997"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aSZ-Ta-TlK">
+            <objects>
+                <viewController id="XCV-VM-9Vz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mK2-Vq-dNl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lele.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="caG-Jh-02F">
+                                <rect key="frame" x="0.0" y="64" width="375" height="231"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="1zY-lZ-fcb"/>
+                                    <constraint firstAttribute="height" constant="231" id="Uys-ZB-GWz"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hel-DL-0tb">
+                                <rect key="frame" x="0.0" y="303" width="375" height="364"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Pecel Lele  1. BAHAN-BAHAN 
+* 1/2 kg ikan lele ukuran sedang 
+* 1 ons tepung terigu (secukup nya) 
+* 1 saset racik tempe 
+* Sambel : 
+* 15 cabai setan 
+* 5 cabai merah 
+* 3 siung bawang puutih 
+* 3 siung bawang merah 
+* 2 buah tomat 
+2. Lalapan : 
+* Mentimun 
+* Kol 
+3. LANGKAH LANGKAH : 
+* Cuci lele sampai bersih lalu sisihkan. 
+* Untuk menghilangkan lendir nya, taburi lele dgn terigu, sesekali di remas. Kemudian bilas lg dengan air mengalir. 
+* Lalu letakan ikan dlm wadah dan baluri racik tempe. Dan tunggu sampai 20 mnt supaya meresap. Dan goreng. (Knp racik tempe bkn racik ikan goreng? Krn mnurut saya lebih enak racik tempe krn berbau ketumbar 😁) 
+* Sambel : goreng Semua bahan sambel, lalu tiriskan. Kemudian ulek stngah halus..tambah gula dan garem secukup nya tes rasa.dan sajikan dgn nasi hangat
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hel-DL-0tb" firstAttribute="trailing" secondItem="uwu-nM-XUG" secondAttribute="trailing" id="GHQ-Nn-bFL"/>
+                            <constraint firstItem="caG-Jh-02F" firstAttribute="top" secondItem="uwu-nM-XUG" secondAttribute="top" id="L28-ce-rUe"/>
+                            <constraint firstItem="hel-DL-0tb" firstAttribute="leading" secondItem="uwu-nM-XUG" secondAttribute="leading" id="MDu-g4-lns"/>
+                            <constraint firstItem="caG-Jh-02F" firstAttribute="trailing" secondItem="uwu-nM-XUG" secondAttribute="trailing" id="jL6-Oi-RJ1"/>
+                            <constraint firstItem="hel-DL-0tb" firstAttribute="bottom" secondItem="uwu-nM-XUG" secondAttribute="bottom" id="mQ6-c7-lWH"/>
+                            <constraint firstItem="caG-Jh-02F" firstAttribute="leading" secondItem="uwu-nM-XUG" secondAttribute="leading" id="of3-7I-jcV"/>
+                            <constraint firstItem="hel-DL-0tb" firstAttribute="top" secondItem="caG-Jh-02F" secondAttribute="bottom" constant="8" id="qTY-6T-MLK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uwu-nM-XUG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sz2-G7-wra" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-706.39999999999998" y="778.56071964017997"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lN6-yf-CJC">
+            <objects>
+                <viewController id="LwX-rX-VKw" customClass="ViewController" customModule="Resep_Resep" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="05S-da-wGp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sop sapi.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IWk-aU-z0U">
+                                <rect key="frame" x="0.0" y="64" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="4j8-Ht-hff"/>
+                                    <constraint firstAttribute="width" constant="375" id="JTf-bO-8tc"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bGM-wJ-YIn">
+                                <rect key="frame" x="0.0" y="272" width="375" height="395"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Sop Sapi  1. Bahan-Bahan 
+* 1/2 kg daging sapi tanpa lemak di potong sesuai selera 
+* Bahan / bumbu untuk presto: 
+* secukupnya Air 
+* 4 buah bunga lawang /pekak 
+* 10 buah kapulaga (buang putih nya ambil biji dalam ny yg bulat) 
+* 4 butir cengkeh 
+* secukupnya Garam dan gula 
+* sedikit Penyedap rasa organik (optional) 
+* 3 sdn Minyak virgin oil 
+* Bahan tambahan : 
+* Irisan daun bawang 
+* Sedikit daun thyme (bisa yang segar bisa yg kering) 
+* 3 buah wortel di potong-potong sesuai selera 
+* 1 lembar kembang tahu potong/ robek-robek sesuai selera 
+* Bawang goreng 
+2. LANGKAH LANGKAH 
+* Presto selama kurang lebih 1 jam daging dengan bahan / bumbu prestonya. 
+* Lalu pindahkaan ke panci biasa tambahkan dengan bahan tambahan 
+* Jangan lupa cek rasa agar pas sesuai selera. 
+* Sajikan dengan nasi atau bisa juga dengan mie / bihun di taburi bawang goreng bisa tambahkan cabai bubuk juga
+
+* Note :jika untuk batita daging nya bisa di suir-suir kecil dan wortel nya biaa di potong lebih kecil di piring nya.
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bGM-wJ-YIn" firstAttribute="leading" secondItem="nTY-uL-xJ7" secondAttribute="leading" id="2Fm-Jy-XYy"/>
+                            <constraint firstItem="bGM-wJ-YIn" firstAttribute="trailing" secondItem="nTY-uL-xJ7" secondAttribute="trailing" id="HpA-2P-FkD"/>
+                            <constraint firstItem="IWk-aU-z0U" firstAttribute="trailing" secondItem="nTY-uL-xJ7" secondAttribute="trailing" id="NkT-Uo-A3V"/>
+                            <constraint firstItem="bGM-wJ-YIn" firstAttribute="bottom" secondItem="nTY-uL-xJ7" secondAttribute="bottom" id="SGI-58-0Du"/>
+                            <constraint firstItem="bGM-wJ-YIn" firstAttribute="top" secondItem="IWk-aU-z0U" secondAttribute="bottom" constant="8" id="YNC-Qs-foI"/>
+                            <constraint firstItem="IWk-aU-z0U" firstAttribute="leading" secondItem="nTY-uL-xJ7" secondAttribute="leading" id="qmW-ZW-l54"/>
+                            <constraint firstItem="IWk-aU-z0U" firstAttribute="top" secondItem="nTY-uL-xJ7" secondAttribute="top" id="zaW-y3-xYX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nTY-uL-xJ7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fR4-Qs-92g"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cHe-ud-q84" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1378.4000000000001" y="-626.53673163418296"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sId-iu-MPg">
+            <objects>
+                <viewController id="GVj-CA-3Wu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JqS-bE-Ca8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bakso.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jQO-kC-odb">
+                                <rect key="frame" x="0.0" y="64" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="9Ry-Yb-QcX"/>
+                                    <constraint firstAttribute="height" constant="200" id="D0e-dm-lx9"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jqy-6q-Gai">
+                                <rect key="frame" x="0.0" y="272" width="375" height="395"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Bakso  1. Bahan-bahan   yang di perlukan pekerja 10-15 orang
+
+2. bahan bakso: 
+* 1 kg daging sapi 
+* 1/2 ons bawang merah (iris dan goreng) 
+* 1/2 ons bawang putih (haluskan) 
+* 1 sdt lada bubuk 
+* 2 sdm garam halus 
+* 1 sdt agar² plain 
+* 4 butir telur (ambil putihnya saja) 
+* 1/2 sdt baking soda 
+* 1 gelas es batu / air dingin 
+* 1/4 kg tepung tapioka (sagu tani) 
+3. bahan kuah : 
+* 3 liter air bersih 
+* 1 buah tulang kaki sapi (sumsum) 
+* 50 gram lemak sapi 
+* 100 gram bawang putih goreng haluskan 
+* 100 gram bawang merah goreng haluskan 
+* 1 sdt lada bubuk 
+* 2 sdm garam 
+* sdm gula 
+* 1 ruas jahe 
+* 1 butir bunga lawang 
+* 1 butir pala / pala bubuk ½ sdt 
+* 1 buah cengkeh /cengkeh bubuk ½ sdt 
+* 1 buah kapulaga /bubuk kapulaga ½ sdt 
+4. bahan pelengkap: 
+* bihun jagung 
+* mie 3 telur 
+* daun bawang 
+* daun seledri 
+* kecap manis 
+* saus tomat 
+* saus sambal 
+* sawi bakso/saichin 
+* cabe rawit merah (haluskan, tumis tanpa minyak + garam sedikit) 
+5. Langkah Langkah 
+* Siapkan food processor, haluskan daging sapi, setelah halus, masukan bawang merah, bawang putih, lada bubuk, es batu, agar dan baking soda, telur putih, campur lagi sampai merata, lalu masukan garam halus, campur lagi sebentar. 
+* Setelah tercampur halus, masukan sagu lalu aduk lagi sampai sagu dan adonan daging tercampur rata. adonan siap di bentuk sesuai selera. kalah saya sedang2 saja tidak terlalu kecil. 
+* Lalu masak air sampai mendidih, lalu matikan kompor. lalu bentuk dengan bantuan sendok, olesi tangan dengan minyak sayur bila lengket. lakukan sampai selesai adonan lalu masak lagi dengan api kecil saja sampai mengapung lalu angkat dan rendam di air es. 
+* Sisa air rebusan jangan dibuang, pakai untuk buat kuah bakso. rebus tulang sapi dan lemak sapi terlebih dahulu selama 30 menit, tambahkan air 3 liter. stelah mendidih angkat dan saring agar kuahnya bersih. 
+* Siapkan wajan menumis, masukan bawang merah, putih lada bubuk dan semua bahan kuah masak sampai harum dan matang, lalu masukkan ke dalam kuah, lalu masak lagi sampai mendidih. bahan² pelengkap siapkan saat mau makan saja, atau bila ingin dimasukkan kuah, cukup daun bawang saja. bunga lawang cukup dimasukin aja, ga usah diancurin. 
+* Sawi, bihun jagung, mie 3 telur rendam dengan air panas dan cuci bersih. tiriskan.
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jqy-6q-Gai" firstAttribute="top" secondItem="jQO-kC-odb" secondAttribute="bottom" constant="8" id="48k-B8-CEb"/>
+                            <constraint firstItem="jqy-6q-Gai" firstAttribute="bottom" secondItem="nqE-Wv-6ph" secondAttribute="bottom" id="D3S-Nf-YXB"/>
+                            <constraint firstItem="jQO-kC-odb" firstAttribute="top" secondItem="nqE-Wv-6ph" secondAttribute="top" id="GaK-92-D35"/>
+                            <constraint firstItem="jQO-kC-odb" firstAttribute="leading" secondItem="nqE-Wv-6ph" secondAttribute="leading" id="Nn9-5L-Owc"/>
+                            <constraint firstItem="jQO-kC-odb" firstAttribute="trailing" secondItem="nqE-Wv-6ph" secondAttribute="trailing" id="e0V-jR-1hc"/>
+                            <constraint firstItem="jqy-6q-Gai" firstAttribute="leading" secondItem="nqE-Wv-6ph" secondAttribute="leading" id="ga3-Yv-Jbe"/>
+                            <constraint firstItem="jqy-6q-Gai" firstAttribute="trailing" secondItem="nqE-Wv-6ph" secondAttribute="trailing" id="wYd-Of-LPo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nqE-Wv-6ph"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VwS-zp-qRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1378.4000000000001" y="89.505247376311857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="8077ef870cefc45b87b906a493a41193--padang-rumah.jpg" width="236" height="354"/>
+        <image name="bakso.jpg" width="1200" height="630"/>
+        <image name="batag.png" width="1920" height="1080"/>
+        <image name="iga sapi.JPG" width="550" height="365"/>
+        <image name="lele.jpg" width="1280" height="720"/>
+        <image name="sop sapi.jpg" width="650" height="325"/>
+        <image name="thumb_2869_recipe_detail.jpeg" width="720" height="405"/>
+    </resources>
+</document>
