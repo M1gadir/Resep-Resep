@@ -1,3 +1,3 @@
 # Resep-Resep
 just like a recipe
-![screenshot](.jpg)
+![screenshot](Resep_Resep_Makanan.jpg)
